@@ -23,6 +23,7 @@ public class ShelfFragment extends Fragment {
         shelfViewModel =
                 ViewModelProviders.of(this).get(ShelfViewModel.class);
         View root = inflater.inflate(R.layout.fragment_shelf, container, false);
+
         final TextView textView = root.findViewById(R.id.text_share);
         shelfViewModel.getText().observe(this, new Observer<String>() {
             @Override
