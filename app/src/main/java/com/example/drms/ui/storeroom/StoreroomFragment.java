@@ -22,7 +22,7 @@ public class StoreroomFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         storeroomViewModel =
                 ViewModelProviders.of(this).get(StoreroomViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        View root = inflater.inflate(R.layout.fragment_storeroom, container, false);
         final TextView textView = root.findViewById(R.id.text_slideshow);
         storeroomViewModel.getText().observe(this, new Observer<String>() {
             @Override

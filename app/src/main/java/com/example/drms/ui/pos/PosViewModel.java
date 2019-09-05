@@ -10,7 +10,7 @@ public class PosViewModel extends ViewModel {
 
     public PosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("This is pos fragment");
     }
 
     public LiveData<String> getText() {

@@ -9,19 +9,19 @@
         android:id="@+id/nav_home"
         android:name="com.example.drms.ui.dashboard.DashboardFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.drms.ui.warehouse.WarehouseFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_warehouse" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.drms.ui.storeroom.StoreroomFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_storeroom" />
 
     <fragment
         android:id="@+id/nav_tools"
@@ -33,11 +33,11 @@
         android:id="@+id/nav_share"
         android:name="com.example.drms.ui.shelf.ShelfFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_shelf" />
 
     <fragment
         android:id="@+id/nav_send"
         android:name="com.example.drms.ui.pos.PosFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_pos" />
 </navigation>

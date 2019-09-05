@@ -22,7 +22,7 @@ public class PosFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         posViewModel =
                 ViewModelProviders.of(this).get(PosViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
+        View root = inflater.inflate(R.layout.fragment_pos, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
         posViewModel.getText().observe(this, new Observer<String>() {
             @Override

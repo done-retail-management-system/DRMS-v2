@@ -10,7 +10,7 @@ public class StoreroomViewModel extends ViewModel {
 
     public StoreroomViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is storeroom fragment");
     }
 
     public LiveData<String> getText() {

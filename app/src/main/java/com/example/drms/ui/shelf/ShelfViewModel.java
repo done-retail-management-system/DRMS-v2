@@ -10,7 +10,7 @@ public class ShelfViewModel extends ViewModel {
 
     public ShelfViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is shelf fragment");
     }
 
     public LiveData<String> getText() {
