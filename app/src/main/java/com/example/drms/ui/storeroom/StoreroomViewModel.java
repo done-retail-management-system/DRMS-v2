@@ -1,16 +1,16 @@
-package com.example.drms.ui.share;
+package com.example.drms.ui.storeroom;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class StoreroomViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public StoreroomViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {
