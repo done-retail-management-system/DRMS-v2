@@ -1,10 +1,12 @@
 package com.example.drms;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -65,5 +67,14 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void btnSettings_onClick(MenuItem item) {
+        Intent action_settings = new Intent(this,SettingsActivity.class);
+        startActivity(action_settings);
+    }
+
+    public void btnSignOut_onClick(MenuItem item) {
+        finish();
     }
 }
