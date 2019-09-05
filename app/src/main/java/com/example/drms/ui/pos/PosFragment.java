@@ -23,7 +23,7 @@ public class PosFragment extends Fragment {
         posViewModel =
                 ViewModelProviders.of(this).get(PosViewModel.class);
         View root = inflater.inflate(R.layout.fragment_pos, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
+        final TextView textView = root.findViewById(R.id.text_POS);
         posViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
