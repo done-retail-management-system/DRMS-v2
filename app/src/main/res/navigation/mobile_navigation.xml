@@ -35,9 +35,4 @@
         android:label="@string/menu_share"
         tools:layout="@layout/fragment_shelf" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.drms.ui.pos.PosFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_pos" />
 </navigation>
