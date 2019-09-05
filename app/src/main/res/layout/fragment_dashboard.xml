@@ -78,4 +78,35 @@
             android:orientation="vertical" />
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="665dp"
+        android:layout_marginBottom="438dp"
+        android:contentDescription="Picture of user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="664dp"
+        android:fontFamily="monospace"
+        android:text="THAPELO S KHANYILE"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
