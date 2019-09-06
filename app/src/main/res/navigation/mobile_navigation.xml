@@ -45,9 +45,5 @@
         android:name="com.example.drms.ware_stock"
         android:label="fragment_ware_stock"
         tools:layout="@layout/fragment_ware_stock" />
-    <fragment
-        android:id="@+id/ware_orders"
-        android:name="com.example.drms.ware_orders"
-        android:label="fragment_ware_orders"
-        tools:layout="@layout/fragment_ware_orders" />
+
 </navigation>
