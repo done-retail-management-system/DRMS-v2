@@ -20,7 +20,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello STOCK fragment</string>
     <string name="hello_blank_fragment1">New Store Orders</string>
-    <string name="string_Pending"> Pending Orders</string>
+    <string name="string_Pending">Pending Orders</string>
     <string name="string_received">Store Orders</string>
     <string name="string_completed">Completed Orders</string>
     <string name="string_shop">Shops</string>
