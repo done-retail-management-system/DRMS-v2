@@ -49,6 +49,78 @@ public class PosFragment extends Fragment{
                     display.setText("1");
             }
         });
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("2");
+                else
+                    display.setText("2");
+            }
+        });
+        three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("3");
+                else
+                    display.setText("3");
+            }
+        });
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("4");
+                else
+                    display.setText("4");
+            }
+        });
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("5");
+                else
+                    display.setText("5");
+            }
+        });
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("6");
+                else
+                    display.setText("6");
+            }
+        });
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("7");
+                else
+                    display.setText("7");
+            }
+        });
+        eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("8");
+                else
+                    display.setText("8");
+            }
+        });
+        nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("9");
+                else
+                    display.setText("9");
+            }
+        });
 
         posViewModel.getText().observe(this, new Observer<String>() {
             @Override
