@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -14,7 +16,9 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.drms.R;
 
-public class PosFragment extends Fragment {
+import org.w3c.dom.Text;
+
+public class PosFragment extends Fragment{
 
     private PosViewModel posViewModel;
 
@@ -23,7 +27,29 @@ public class PosFragment extends Fragment {
         posViewModel =
                 ViewModelProviders.of(this).get(PosViewModel.class);
         View root = inflater.inflate(R.layout.fragment_pos, container, false);
+        //Declaring Variables and adding action listener
         final TextView textView = root.findViewById(R.id.text_POS);
+        final TextView display = root.findViewById(R.id.text_barcode);
+        final ImageButton one = root.findViewById(R.id.btn_one);
+        ImageButton two = root.findViewById(R.id.btn_two);
+        ImageButton three = root.findViewById(R.id.btn_three);
+        ImageButton four = root.findViewById(R.id.btn_four);
+        ImageButton five = root.findViewById(R.id.btn_five);
+        ImageButton six = root.findViewById(R.id.btn_six);
+        ImageButton seven = root.findViewById(R.id.btn_seven);
+        ImageButton eight = root.findViewById(R.id.btn_eight);
+        ImageButton nine = root.findViewById(R.id.btn_nine);
+
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!display.getText().toString().matches(""))
+                    display.append("1");
+                else
+                    display.setText("1");
+            }
+        });
+
         posViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -32,4 +58,6 @@ public class PosFragment extends Fragment {
         });
         return root;
     }
+
+    //Manual Input Barcode
 }
