@@ -6,13 +6,108 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="510dp"
+        android:layout_height="494dp"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/text_barcode"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="82dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/cancel+button"
+            android:layout_width="174dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="434dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/next_Button"
+            android:layout_width="174dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="178dp"
+            android:layout_marginTop="434dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shopper_cart"
+        android:layout_width="765dp"
+        android:layout_height="502dp"
+        android:background="?attr/colorButtonNormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="121dp"
+            android:layout_height="74dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/background_light"
+            app:srcCompat="@drawable/shop_cart" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="187dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="10dp"
+            android:text="Cart"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="1279dp"
-        android:layout_height="164dp"
+        android:layout_width="1278dp"
+        android:layout_height="166dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="3dp"
         android:background="?attr/colorButtonNormal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -121,44 +216,6 @@
             android:text="TextView"
             android:textSize="18sp" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="791dp"
-        android:layout_height="496dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="448dp"
-        android:background="?attr/colorControlNormal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="149dp"
-            android:layout_height="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="72dp"
-            android:layout_marginTop="0dp"
-            android:text="Customer " />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="456dp"
-            android:layout_alignEnd="@+id/_dynamic"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp">
-
-        </ListView>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
