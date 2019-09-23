@@ -1,5 +1,6 @@
 package com.example.drms;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -23,7 +24,8 @@ import android.view.Menu;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button3;
+    private Button button3; // sold button
+
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       // Create button listener for SOLD
         button3 = findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +58,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
+
+    // method to open SOLD activity
+     public void opensoldAct(){
+        Intent intent = new Intent(this, soldAct.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
