@@ -42,6 +42,16 @@ public class MainActivity extends AppCompatActivity {
                 opensoldAct();
             }
         });
+
+        // Create button listener for STORAGE
+        button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openstorageAct();
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -61,7 +71,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // method to open SOLD activity
-     public void opensoldAct(){
+    public void opensoldAct(){
+        Intent intent = new Intent(this, soldAct.class);
+        startActivity(intent);
+    }
+
+    // method to open SOLD activity
+    public void opensoldAct(){
         Intent intent = new Intent(this, soldAct.class);
         startActivity(intent);
     }
