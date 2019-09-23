@@ -1,6 +1,7 @@
 package com.example.drms;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         buttonStock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openactivity_stock();
+                openActivity_stock();
             }
         });
 
@@ -70,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
     }
+
+    //Method to open stock activity
+    public void openActivity_stock() {
+        Intent intent = new Intent( this, activity_stock.class);
+        startActivity(intent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
