@@ -25,7 +25,9 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button3; // sold button
-    private Button button2;
+    private Button button2;// storage button
+    private Button button; // shelf button
+
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 openstorageAct();
             }
         });
+        
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
