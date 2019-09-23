@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // method to open SOLD activity
-    public void opensoldAct(){
-        Intent intent = new Intent(this, soldAct.class);
+    public void openstorageAct(){
+        Intent intent = new Intent(this, storageAct.class);
         startActivity(intent);
     }
 
