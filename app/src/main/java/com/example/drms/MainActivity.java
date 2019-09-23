@@ -53,14 +53,23 @@ public class MainActivity extends AppCompatActivity {
                 openstorageAct();
             }
         });
-        
 
+        // Create button listener for SHELF
+        button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openshelfAct();
+            }
+        });
+
+
+        //Craeted TAbs for SHELF
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
@@ -79,9 +88,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // method to open SOLD activity
+    // method to open STORAGE activity
     public void openstorageAct(){
         Intent intent = new Intent(this, storageAct.class);
+        startActivity(intent);
+    }
+
+    // method to open SHELF activity
+    public void openshelfAct(){
+        Intent intent = new Intent(this, shelfAct.class);
         startActivity(intent);
     }
 
