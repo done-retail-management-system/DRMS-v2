@@ -42,7 +42,7 @@ public class PlaceholderFragment extends Fragment {
         pageViewModel.setIndex(index);
     }
 
-    @Override
+    /*@Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -53,7 +53,6 @@ public class PlaceholderFragment extends Fragment {
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
-        });
-        return root;
+        }); */
+        //return root;
     }
-}
