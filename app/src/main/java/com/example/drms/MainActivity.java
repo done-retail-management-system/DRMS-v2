@@ -24,6 +24,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
 
+import java.nio.file.OpenOption;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -36,7 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
         //button listener for st6ock actvity button
         buttonStock = findViewById(R.id.btn_stock);
-
+        buttonStock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openactivity_stock();
+            }
+        });
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
