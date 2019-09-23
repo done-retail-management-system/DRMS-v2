@@ -25,6 +25,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button3; // sold button
+    private Button button2;
 
 
     private AppBarConfiguration mAppBarConfiguration;
