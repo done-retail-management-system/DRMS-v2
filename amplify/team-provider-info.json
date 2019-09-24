@@ -1,0 +1,14 @@
+{
+    "android": {
+        "awscloudformation": {
+            "AuthRoleName": "drms-v2-android-20190923102912-authRole",
+            "UnauthRoleArn": "arn:aws:iam::829957017003:role/drms-v2-android-20190923102912-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::829957017003:role/drms-v2-android-20190923102912-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "drms-v2-android-20190923102912-deployment",
+            "UnauthRoleName": "drms-v2-android-20190923102912-unauthRole",
+            "StackName": "drms-v2-android-20190923102912",
+            "StackId": "arn:aws:cloudformation:us-east-2:829957017003:stack/drms-v2-android-20190923102912/39cc6170-dddc-11e9-8487-0af659736e02"
+        }
+    }
+}
