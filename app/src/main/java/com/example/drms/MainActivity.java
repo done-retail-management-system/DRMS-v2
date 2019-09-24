@@ -1,43 +1,50 @@
 package com.example.drms;
 
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-
+import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.fragment.app.FragmentActivity;
-import android.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.navigation.NavigationView;
-
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
-import android.widget.Button;
-
-import java.nio.file.OpenOption;
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
     private AppBarConfiguration mAppBarConfiguration;
     private Button buttonStock; // this is the button fo the stock activity
+    private AppBarLayout appBarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //button listener for st6ock actvity button
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout_id);
+        appBarLayout = (AppBarLayout) findViewById(R.id.stock_bar);
+        viewPager = (ViewPager) findViewById(R.id.view_pager_id);
+        ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
+        adapter.AddFragment(new activity_stock(), "Current Stock");
+        //adapter.AddFragment(new activity_stock(), "Current Stock");
+        //adapter.AddFragment(new activity_stock(), "Current Stock");
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
+
+
+        //button listener for stock actvity button
         buttonStock = findViewById(R.id.btn_stock);
         buttonStock.setOnClickListener(new View.OnClickListener() {
             @Override

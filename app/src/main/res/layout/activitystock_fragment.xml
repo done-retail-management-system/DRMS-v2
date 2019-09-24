@@ -4,4 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="This is the CURRENT STOCK page"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
 </LinearLayout>
