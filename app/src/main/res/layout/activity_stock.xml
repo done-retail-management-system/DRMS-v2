@@ -15,7 +15,7 @@
         android:id="@+id/stock_bar">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:contentDescription="Stock Image"
             android:padding="10dp"
@@ -27,11 +27,17 @@
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:layout_marginRight="0dp"
         android:layout_marginLeft="-600dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/tabColour"
         app:tabGravity="fill"
         app:tabMode="fixed"
         app:tabTextColor="@color/tabTextColour"
+        app:tabIndicatorColor="@color/abIndicator"/>
 
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager_id"
 </LinearLayout>

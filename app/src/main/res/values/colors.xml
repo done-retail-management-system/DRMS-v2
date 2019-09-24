@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#34515e</color>
     <color name="colorAccent">#D81B60</color>
     <color name="tabColour">#325BA3</color>
+    <color name="tabColour2">#5407DB</color>
     <color name="tabTextColour">#ffffff</color>
+    <color name="abIndicator">#524F4F</color>
 </resources>
