@@ -24,4 +24,8 @@
     <string name="string_received">Store Orders</string>
     <string name="string_completed">Completed Orders</string>
     <string name="string_shop">Shops</string>
+    <string name="stock_on_hand">Stock On hand</string>
+    <string name="returned_stock">Stock Returned</string>
+    <string name="title_activity_mainactivity2">mainactivity2</string>
+    <string name="title_activity_sub__test_page">sub_TestPage</string>
 </resources>

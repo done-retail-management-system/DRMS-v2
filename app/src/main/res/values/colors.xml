@@ -7,4 +7,5 @@
     <color name="tabColour2">#5407DB</color>
     <color name="tabTextColour">#ffffff</color>
     <color name="abIndicator">#524F4F</color>
+    <color name="button_colour">#c3b1a8</color>
 </resources>

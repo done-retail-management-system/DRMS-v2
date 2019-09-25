@@ -10,7 +10,7 @@ public class WarehouseViewModel extends ViewModel {
 
     public WarehouseViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is warehouse fragment");
+        mText.setValue("Select a division");
     }
 
     public LiveData<String> getText() {

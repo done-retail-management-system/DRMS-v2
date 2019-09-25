@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/activity_stock1"
     android:layout_height="match_parent"
-    tools:context=".activity_stock"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:visibility="visible"
+    tools:context=".ui.warehouse.activity_stock"
+    tools:visibility="visible">
 
-
-   <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_gravity="top"
-        android:id="@+id/stock_bar">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="Stock Image"
-            android:padding="10dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/stock"/>
-
-    </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.tabs.TabLayout
 
         android:id="@+id/tabLayout_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-600dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="0dp"
-        android:background="@color/tabColour"
+        android:background="@color/button_colour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:tabGravity="fill"
+        app:tabIndicatorColor="@color/abIndicator"
         app:tabMode="fixed"
-        app:tabTextColor="@color/tabTextColour"
-        app:tabIndicatorColor="@color/abIndicator"/>
+        app:tabTextColor="@color/tabTextColour">
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/view_pager_id"/>
-</LinearLayout>
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_on_hand" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/returned_stock" />
+    </com.google.android.material.tabs.TabLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

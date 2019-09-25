@@ -9,12 +9,14 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.drms.ui.warehouse.WarehouseFragment;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -32,26 +34,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tabLayout = (TabLayout) findViewById(R.id.tabLayout_id);
-        appBarLayout = (AppBarLayout) findViewById(R.id.stock_bar);
-        viewPager = (ViewPager) findViewById(R.id.view_pager_id);
-        ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new activity_stock(), "Current Stock");
+        //tabLayout = (TabLayout) findViewById(R.id.tabLayout_id);
+        //appBarLayout = (AppBarLayout) findViewById(R.id.stock_bar);
+       // viewPager = (ViewPager) findViewById(R.id.view_pager_id);
+       // ViewPageAdapter adapter = new ViewPageAdapter(getSupportFragmentManager());
+        //adapter.AddFragment(new activity_stock(), "Current Stock");
         //adapter.AddFragment(new activity_stock(), "Current Stock");
         //adapter.AddFragment(new activity_stock(), "Current Stock");
 
-        viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);
+        //viewPager.setAdapter(adapter);
+        //tabLayout.setupWithViewPager(viewPager);
 
 
         //button listener for stock actvity button
-        buttonStock = findViewById(R.id.btn_stock);
-        buttonStock.setOnClickListener(new View.OnClickListener() {
+        //buttonStock = findViewById(R.id.btn_stock);
+        /*buttonStock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openActivity_stock();
             }
-        });
+        });*/
 
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -77,13 +79,22 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+       /* WarehouseFragment fragment = new WarehouseFragment();
+        FragmentManager manager = getSupportFragmentManager();
+
+        //changes the packaage name
+        manager.beginTransaction().add(R.id.activity_stock1,fragment).commit();*/
+
+
     }
 
     //Method to open stock activity
-    public void openActivity_stock() {
+    /*public void openActivity_stock() {
         Intent intent = new Intent( this, activity_stock.class);
         startActivity(intent);
-    }
+    }*/
 
 
     @Override
