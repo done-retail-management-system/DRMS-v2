@@ -5,348 +5,317 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/shopper_cart"
-        android:layout_width="945dp"
-        android:layout_height="1199dp"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="215dp"
+        android:layout_height="71dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="952dp"
-        android:layout_marginBottom="0dp"
-        android:background="?attr/colorButtonNormal">
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="942dp"
+        android:layout_marginBottom="414dp"
+        android:text="Cart"
+        android:textAlignment="center"
+        android:textSize="36sp" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="121dp"
-            android:layout_height="74dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:background="@android:color/background_light"
-            app:srcCompat="@drawable/shop_cart" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="426dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="122dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="397dp"
-            android:text="Cart"
-            android:textAlignment="center"
-            android:textSize="36sp" />
-
-        <ListView
-            android:layout_width="929dp"
-            android:layout_height="632dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="73dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="494dp"
-            android:background="#FAFAFA" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="1901dp"
-        android:layout_height="211dp"
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="121dp"
+        android:layout_height="74dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="1208dp"
-        android:background="?attr/colorButtonNormal">
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="1159dp"
+        android:layout_marginBottom="413dp"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/shop_cart" />
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="331dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="1571dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="-1dp"
-            android:layout_marginBottom="0dp"
-            android:adjustViewBounds="true"
-            android:cropToPadding="true"
-            app:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/text_POS"
-            android:layout_width="230dp"
-            android:layout_height="44dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="632dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginBottom="123dp"
-            android:text="TextView"
-            android:textSize="36sp" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="184dp"
-            android:layout_height="121dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="-4dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="12dp"
-            app:srcCompat="@drawable/pos" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="93dp"
-            android:layout_height="32dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="195dp"
-            android:layout_marginTop="7dp"
-            android:text="Name:"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="195dp"
-            android:layout_marginTop="53dp"
-            android:text="Employee ID:"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="93dp"
-            android:layout_height="31dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="196dp"
-            android:layout_marginTop="92dp"
-            android:layout_marginBottom="88dp"
-            android:text="Email:"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView25"
-            android:layout_width="161dp"
-            android:layout_height="29dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="364dp"
-            android:layout_marginTop="8dp"
-            android:text="Full Name"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="161dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="362dp"
-            android:layout_marginTop="52dp"
-            android:text="Employee ID"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="158dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="364dp"
-            android:layout_marginTop="93dp"
-            android:layout_marginBottom="88dp"
-            android:text="TextView"
-            android:textSize="18sp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/barcode_entry"
+    <ListView
         android:layout_width="wrap_content"
-        android:layout_height="735dp"
+        android:layout_height="417dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="641dp"
+        android:layout_marginBottom="-3dp"
+        android:background="#FAFAFA" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="161dp"
+        android:layout_height="30dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="948dp"
-        android:layout_marginTop="215dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="469dp">
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="878dp"
+        android:layout_marginBottom="584dp"
+        android:text="Employee ID"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/text_barcode"
-            android:layout_width="514dp"
-            android:layout_height="88dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="163dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="130dp"
-            android:background="@android:color/darker_gray"
-            android:hint="Enter Barcode!!!!"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="922dp"
+        android:layout_marginBottom="632dp"
+        android:text="Full Name"
+        android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/btn_one"
-            android:layout_width="117dp"
-            android:layout_height="86dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="164dp"
-            android:layout_marginTop="160dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/one" />
+    <TextView
+        android:id="@+id/text_POS"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="598dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="459dp"
+        android:layout_marginBottom="596dp"
+        android:text="TextView"
+        android:textSize="36sp" />
 
-        <ImageButton
-            android:id="@+id/btn_two"
-            android:layout_width="82dp"
-            android:layout_height="80dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="445dp"
-            android:layout_marginTop="194dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/two" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginEnd="1057dp"
+        android:layout_marginBottom="591dp"
+        android:text="Employee ID:"
+        android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/btn_four"
-            android:layout_width="115dp"
-            android:layout_height="85dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="162dp"
-            android:layout_marginTop="290dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/four" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="93dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="1079dp"
+        android:layout_marginBottom="626dp"
+        android:text="Name:"
+        android:textSize="18sp" />
 
-        <ImageButton
-            android:id="@+id/btn_five"
-            android:layout_width="82dp"
-            android:layout_height="80dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="447dp"
-            android:layout_marginTop="290dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/five" />
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="106dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="1174dp"
+        android:layout_marginBottom="564dp"
+        app:srcCompat="@drawable/pos" />
 
-        <ImageButton
-            android:id="@+id/btn_six"
-            android:layout_width="86dp"
-            android:layout_height="84dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="585dp"
-            android:layout_marginTop="290dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/six" />
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1067dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="526dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/logo" />
 
-        <ImageButton
-            android:id="@+id/btn_nine"
-            android:layout_width="86dp"
-            android:layout_height="84dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="578dp"
-            android:layout_marginTop="384dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/nine" />
+    <TextView
+        android:id="@+id/text_barcode"
+        android:layout_width="514dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="739dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="393dp"
+        android:background="@android:color/darker_gray"
+        android:hint="Enter Barcode!!!!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/btn_eight"
-            android:layout_width="82dp"
-            android:layout_height="80dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="447dp"
-            android:layout_marginTop="382dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/eight" />
+    <ImageButton
+        android:id="@+id/btn_one"
+        android:layout_width="112dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="762dp"
+        android:layout_marginTop="301dp"
+        android:layout_marginEnd="406dp"
+        android:layout_marginBottom="276dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/one" />
 
-        <ImageButton
-            android:id="@+id/btn_seven"
-            android:layout_width="111dp"
-            android:layout_height="82dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="162dp"
-            android:layout_marginTop="423dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/seven" />
+    <ImageButton
+        android:id="@+id/nextbutton"
+        android:layout_width="89dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1163dp"
+        android:layout_marginTop="586dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="1dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/next" />
 
-        <ImageButton
-            android:id="@+id/btnCancel"
-            android:layout_width="101dp"
-            android:layout_height="83dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="167dp"
-            android:layout_marginTop="527dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/cancel" />
+    <ImageButton
+        android:id="@+id/btn_nine"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1162dp"
+        android:layout_marginTop="487dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="92dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/nine" />
 
-        <ImageButton
-            android:id="@+id/imageButton14"
-            android:layout_width="82dp"
-            android:layout_height="80dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="447dp"
-            android:layout_marginTop="478dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/two" />
+    <ImageButton
+        android:id="@+id/btn_seven"
+        android:layout_width="111dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="766dp"
+        android:layout_marginTop="504dp"
+        android:layout_marginEnd="403dp"
+        android:layout_marginBottom="77dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/seven" />
 
-        <ImageButton
-            android:id="@+id/nextbutton"
-            android:layout_width="89dp"
-            android:layout_height="76dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="574dp"
-            android:layout_marginTop="482dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/next" />
+    <ImageButton
+        android:id="@+id/btn_eight"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="972dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="78dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/eight" />
 
-        <ImageButton
-            android:id="@+id/btn_three"
-            android:layout_width="86dp"
-            android:layout_height="84dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="583dp"
-            android:layout_marginTop="194dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/three" />
+    <ImageButton
+        android:id="@+id/btn_six"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1162dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="188dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/six" />
 
-    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/btn_five"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="977dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginBottom="178dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/five" />
+
+    <ImageButton
+        android:id="@+id/btn_four"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="765dp"
+        android:layout_marginTop="407dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginBottom="171dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/four" />
+
+    <ImageButton
+        android:id="@+id/btn_three"
+        android:layout_width="86dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1164dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="289dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/three" />
+
+    <ImageButton
+        android:id="@+id/btn_two"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="982dp"
+        android:layout_marginTop="294dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="289dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/two" />
 
 </RelativeLayout>
