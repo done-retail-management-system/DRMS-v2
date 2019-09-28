@@ -1,5 +1,6 @@
 package com.example.drms.ui.pos;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.drms.MainActivity;
 import com.example.drms.R;
 
 import org.w3c.dom.Text;
@@ -39,7 +41,14 @@ public class PosFragment extends Fragment{
         ImageButton seven = root.findViewById(R.id.btn_seven);
         ImageButton eight = root.findViewById(R.id.btn_eight);
         ImageButton nine = root.findViewById(R.id.btn_nine);
+        ImageButton scan = root.findViewById(R.id.scan);
 
+        scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(MainActivity., ScanActivity.class);
+            }
+        });
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
